@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+/* notifications */
+
+.notificationBox {
+  padding: 1rem;
+  background-color: #a7ffab;
+  opacity: 0.8;
+  border: 0.2rem solid;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  width: 88rem;
+  height: 45rem;
+  font-size: 1.8rem;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 0px 0px, rgba(0, 0, 0, 0.17) 0px 3px 3px,
+    rgba(0, 0, 0, 0.09) 0px 0px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* dashboardBox */
+
+.dashboardBox {
+  border: 0.5em solid #ccc;
+  padding: 1rem;
+  /* background: #b9ddda, 0.5; */
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  width: 115rem;
+  height: 50rem;
+  font-size: 1.8rem;
+  transition: background 1.3s ease;
+  border-radius: 10rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dashboardBox::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboardBox:hover {
+  /* background: #ffffff; */ /* Yay or nay? */
+}
+
+.dashboardContents {
+  /* */
+}
+
+.list-group {
+  border-radius: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  -webkit-overflow-scrolling: scroll;
+  background-color: #b9ddda;
+  box-shadow: rgba(255, 0, 0, 0.25) 0px 24px 55px,
+    rgba(255, 0, 0, 0.12) 0px 0px 0px, rgba(255, 0, 0, 0.12) 0px 0px 0px,
+    rgba(255, 255, 255, 0.17) 0px 12px 3px, rgba(255, 0, 0, 0.09) 0px 0px 0px;
+}
+
+.hookForm {
+  color: white;
+}
+
+.list-group-item {
+  /* Själva texten*/
+  /* background: white; */
+  border: 0.5rem solid;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* toggle-Switch */
+
+/* backgroundImage */
+
+.backgroundImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(./images/vintage-portrait.jpg);
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.backgroundImage h3 {
+  padding: 5rem;
+}
+
+.loginButton {
+  background: #14746c;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  color: white;
+  /* width: 5rem;
+  height: 1.5rem;
+  font-size: 1.8rem; */
+  transition: background 0.8s ease;
+  border-radius: 1rem;
+}
+
+.loginButton:hover {
+  background: #4aaf3d;
+}
+
+.active {
+  display: none;
+}
+
+/* Header section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 0.2 1 40rem;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 10rem;
+}
+
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #15534e;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 10vh;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1 1 40rem;
+}
+
+footer h4 {
+  flex: 1 1 40rem;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
